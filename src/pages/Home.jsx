@@ -471,11 +471,7 @@ const Home = () => {
               className="w-full h-full object-cover rounded-xl transition-transform duration-700 scale-100 group-hover:scale-102" 
             />
             <div className="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition-all duration-500 rounded-xl" />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-              <div className="w-20 h-20 bg-brand-red rounded-full flex items-center justify-center cursor-pointer hover:scale-110 active:scale-95 transition-all shadow-[0_0_30px_rgba(230,26,35,0.7)] group">
-                <Play fill="white" size={28} className="ml-1 text-slate-900 group-hover:scale-105 transition-transform" />
-              </div>
-            </div>
+
           </motion.div>
         </div>
       </section>
