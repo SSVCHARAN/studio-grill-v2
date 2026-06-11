@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <div className="w-full pt-32 pb-24 bg-slate-50 relative overflow-hidden">
+    <div className="w-full pt-28 pb-20 md:pt-32 md:pb-24 bg-slate-50 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none opacity-60 mix-blend-multiply">
         <div className="absolute -top-[10%] -left-[10%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] rounded-full bg-brand-red/15 blur-[100px] animate-blob1" />
         <div className="absolute top-[10%] -right-[10%] w-[45vw] h-[45vw] max-w-[500px] max-h-[500px] rounded-full bg-sky-400/15 blur-[100px] animate-blob2" />
@@ -15,9 +15,9 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-center mb-20"
+          className="max-w-4xl mx-auto text-center mb-12 md:mb-20"
         >
-          <h1 className="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight font-heading mb-6 uppercase">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight font-heading mb-6 uppercase">
             Welcome to <span className="text-brand-red">Studio Grill</span>
           </h1>
           <p className="text-xl sm:text-2xl text-slate-600 font-light leading-relaxed mb-8">
@@ -26,7 +26,7 @@ const About = () => {
           <div className="w-24 h-1 bg-brand-red mx-auto rounded-full"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-16 md:mb-24">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -57,7 +57,7 @@ const About = () => {
         </div>
 
         <div className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-black text-center mb-12 uppercase tracking-wide">Our Core Values</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-center mb-12 uppercase tracking-wide">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { title: "Excellence", desc: "Premium quality in every dish, every theater screening, and every interaction." },

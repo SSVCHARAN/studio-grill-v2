@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <div className="w-full pt-32 pb-24 bg-slate-50 relative overflow-hidden">
+    <div className="w-full pt-28 pb-20 md:pt-32 md:pb-24 bg-slate-50 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none opacity-60 mix-blend-multiply">
         <div className="absolute -top-[10%] -left-[10%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] rounded-full bg-brand-red/15 blur-[100px] animate-blob1" />
         <div className="absolute top-[10%] -right-[10%] w-[45vw] h-[45vw] max-w-[500px] max-h-[500px] rounded-full bg-sky-400/15 blur-[100px] animate-blob2" />
@@ -18,7 +18,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight font-heading mb-6 uppercase">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight font-heading mb-6 uppercase">
             Get In <span className="text-brand-red">Touch</span>
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">

@@ -8,7 +8,7 @@ const Footer = () => {
 
       <div className="absolute top-0 left-12 w-[300px] h-[300px] rounded-full bg-brand-red/3 blur-[100px] pointer-events-none" />
 
-      <div className="container relative z-10 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+      <div className="container relative z-10 grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-16">
         {/* Brand */}
         <div className="col-span-1 md:col-span-1 space-y-6">
           <Link to="/" className="flex items-center gap-1 group">

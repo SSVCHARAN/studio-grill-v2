@@ -43,7 +43,7 @@ const Experiences = () => {
   ];
 
   return (
-    <div className="w-full pt-32 pb-24 bg-slate-50 relative overflow-hidden">
+    <div className="w-full pt-28 pb-20 md:pt-32 md:pb-24 bg-slate-50 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none opacity-60 mix-blend-multiply">
         <div className="absolute -top-[10%] -left-[10%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] rounded-full bg-brand-red/15 blur-[100px] animate-blob1" />
         <div className="absolute top-[10%] -right-[10%] w-[45vw] h-[45vw] max-w-[500px] max-h-[500px] rounded-full bg-sky-400/15 blur-[100px] animate-blob2" />
@@ -55,9 +55,9 @@ const Experiences = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-12 md:mb-20"
         >
-          <h1 className="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight font-heading mb-6 uppercase">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight font-heading mb-6 uppercase">
             Signature <span className="text-brand-red">Experiences</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">
@@ -65,9 +65,9 @@ const Experiences = () => {
           </p>
         </motion.div>
 
-        <div className="flex flex-col gap-24">
+        <div className="flex flex-col gap-16 md:gap-24">
           {experiences.map((exp, idx) => (
-            <div key={idx} className={`flex flex-col ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 lg:gap-20 items-center`}>
+            <div key={idx} className={`flex flex-col ${idx % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 md:gap-12 lg:gap-12 md:gap-20 items-center`}>
               <motion.div 
                 initial={{ opacity: 0, x: idx % 2 !== 0 ? 30 : -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -89,7 +89,7 @@ const Experiences = () => {
                 <div className="w-14 h-14 rounded-full bg-brand-red/10 flex items-center justify-center">
                   {exp.icon}
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 font-heading">{exp.title}</h2>
+                <h2 className="text-3xl md:text-4xl font-black text-slate-900 font-heading">{exp.title}</h2>
                 <p className="text-lg text-slate-600 font-light leading-relaxed">{exp.desc}</p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">

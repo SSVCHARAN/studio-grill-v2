@@ -221,7 +221,7 @@ const Home = () => {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="space-y-6"
           >
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-widest leading-none text-slate-900 flex flex-wrap justify-center items-center gap-x-3 gap-y-2">
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-black uppercase tracking-widest leading-none text-slate-900 flex flex-wrap justify-center items-center gap-x-3 gap-y-2">
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-slate-900 to-slate-600">EAT</span>
               <span className="text-brand-red animate-[glow_2s_ease-in-out_infinite_alternate] filter drop-shadow-[0_0_8px_rgba(230,26,35,0.8)] font-sans">•</span>
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-slate-900 to-slate-600">PLAY</span>
@@ -251,7 +251,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="max-w-5xl mx-auto glass-panel p-6 sm:p-8 flex flex-wrap justify-center items-center gap-6 sm:gap-12 md:gap-16 border-t-brand-red/30 border-t-2 rounded-2xl"
+          className="max-w-5xl mx-auto glass-panel p-6 sm:p-8 flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-12 md:gap-10 md:gap-16 border-t-brand-red/30 border-t-2 rounded-2xl"
         >
           <div className="flex items-center gap-3 text-slate-600 hover:text-slate-900 transition-colors duration-300 group">
             <div className="w-10 h-10 rounded-full bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center group-hover:bg-brand-blue group-hover:scale-110 transition-all duration-300">
@@ -341,7 +341,7 @@ const Home = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -15 }}
                   transition={{ duration: 0.4 }}
-                  className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 md:gap-12 items-center"
                 >
                   {/* Left Side Info */}
                   <div className="space-y-6">
@@ -349,7 +349,7 @@ const Home = () => {
                       <Sparkles size={12} className="animate-spin" style={{ animationDuration: '3s' }} /> {selectedZoneData.tagline}
                     </div>
 
-                    <h3 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading">
+                    <h3 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight font-heading">
                       {selectedZoneData.title}
                     </h3>
 
@@ -427,7 +427,7 @@ const Home = () => {
       <section className="section-padding bg-slate-50 relative overflow-hidden border-t border-black/5">
         <div className="absolute -left-[300px] top-1/4 w-[600px] h-[600px] rounded-full bg-brand-red/3 blur-[120px] pointer-events-none" />
 
-        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -35 }}
             whileInView={{ opacity: 1, x: 0 }}
